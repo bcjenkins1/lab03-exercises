@@ -1,5 +1,8 @@
 # Lab 03: Git and GitHub
 
+This repository documents my practice with 
+local Git, GitHub, branches, and pull requests.
+
 ## README Responses
 
 ### 1.1 After initialization
@@ -30,13 +33,71 @@ nothing added to commit but untracked files present (use "git add" to track)
 ### 1.3 After the first commit
 
 ```text
+atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ git status
+On branch main
+nothing to commit, working tree clean
 ```
 
 ### 1.4 git log
+```text
+atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ git log --oneline
+0f5b3c6 (HEAD -> main) Create lab README
+```
 
 ### 1.5 git diff
 
 Paste the `git status` and `git diff` commands and their output.
+
+```text
+atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+```text
+atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ git diff
+diff --git a/README.md b/README.md
+index 0934033..2b084c6 100644
+--- a/README.md
++++ b/README.md
+@@ -1,5 +1,8 @@
+ # Lab 03: Git and GitHub
+
++This repository documents my practice with ^M
++local Git, GitHub, branches, and pull requests.^M
++^M
+ ## README Responses
+
+ ### 1.1 After initialization
+@@ -30,14 +33,23 @@ nothing added to commit but untracked files present (use "git add" to track)
+ ### 1.3 After the first commit
+
+
++atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ git status^M
++On branch main^M
++nothing to commit, working tree clean^M
+
+
+ ### 1.4 git log
+
++atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ git log --oneline^M
++0f5b3c6 (HEAD -> main) Create lab README^M
+
+
+ ### 1.5 git diff
+
+ Paste the `git status` and `git diff` commands and their output.
+
++^M
++^M
+ How does this `git status` differ from the one in **1.2**?
+
+ ### 1.6 Git command reflections
+```
 
 How does this `git status` differ from the one in **1.2**?
 
