@@ -100,6 +100,9 @@ index 0934033..2b084c6 100644
 ```
 
 How does this `git status` differ from the one in **1.2**?
+```text
+the new one shows that README has been changed, and commits have been done
+```
 
 ### 1.6 Git command reflections
 
