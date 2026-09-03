@@ -109,11 +109,29 @@ the new one shows that README has been changed, and commits have been done
 In one or two sentences each, what does each command do?
 
 - `git init`
+```text
+turns the current directory into a Git repository
+```
 - `git status`
+```text
+tells what files (if any) are changed/new compared to most recent commit in repo
+```
 - `git add`
+```text
+stages files to be committed
+```
 - `git commit`
+```text
+commits staged files to the repo
+```
 - `git log`
+```text
+command shows commit history
+```
 - `git diff`
+```text
+
+```
 
 ### 1.7 Repository link
 
