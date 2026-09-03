@@ -130,10 +130,13 @@ command shows commit history
 ```
 - `git diff`
 ```text
-
+shows most recent changes in files compared to most recent commit
 ```
 
 ### 1.7 Repository link
+```text
+https://github.com/bcjenkins1/lab03-exercises
+```
 
 ### 1.8 Comparing approaches
 
