@@ -143,8 +143,22 @@ https://github.com/bcjenkins1/lab03-exercises
 In your own words:
 
 - How does the nested-loop approach check for a duplicate?
+  ```text
+  The loop compares each number with every number that comes after it
+  ```
+
 - How does the set-based approach check for a duplicate?
+  ```text
+  it buts everything into a HashSet and a set can't contain duplicates, so they're automatically removed
+  ```
+
 - What is the runtime and memory trade-off of each?
+  ```test
+  Runtime, Memory
+  Loop: O(n^2), O(1)
+  Memory: O(n), O(n)
+  ```
+
 
 ### 1.9 Pull request merge options
 
@@ -153,3 +167,7 @@ In your own words, what does each GitHub merge option do?
 - Create a merge commit
 - Squash and merge
 - Rebase and merge
+
+```test
+
+```

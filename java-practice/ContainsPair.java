@@ -12,6 +12,9 @@ public class ContainsPair {
         checkCase(Arrays.asList(5, 2, -10, 44, 90), false, "no duplicate");
         checkCase(Arrays.asList(-2, 4, -2), true, "negative duplicate");
         checkCase(Arrays.asList(7, 7, 7), true, "repeated more than twice");
+
+        checkCase(Arrays.asList(10, 20, 30, 10), true, "duplicate at beginning and end");
+
     }
 
     public static boolean checkNestedLoops(List<Integer> values) {
