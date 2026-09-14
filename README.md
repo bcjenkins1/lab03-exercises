@@ -1,11 +1,12 @@
 # Lab 03: Git and GitHub
 
-This repository documents my practice with 
+This repository documents my practice with
 local Git, GitHub, branches, and pull requests.
 
 ## README Responses
 
 ### 1.1 After initialization
+
 ```text
 ls -la
 atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ ls -la
@@ -39,6 +40,7 @@ nothing to commit, working tree clean
 ```
 
 ### 1.4 git log
+
 ```text
 atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ git log --oneline
 0f5b3c6 (HEAD -> main) Create lab README
@@ -58,6 +60,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
+
 ```text
 atomi@LAPTOP-1APKAE2C:~/csci338/lab03-exercises$ git diff
 diff --git a/README.md b/README.md
@@ -100,6 +103,7 @@ index 0934033..2b084c6 100644
 ```
 
 How does this `git status` differ from the one in **1.2**?
+
 ```text
 the new one shows that README has been changed, and commits have been done
 ```
@@ -109,31 +113,43 @@ the new one shows that README has been changed, and commits have been done
 In one or two sentences each, what does each command do?
 
 - `git init`
+
 ```text
 turns the current directory into a Git repository
 ```
+
 - `git status`
+
 ```text
 tells what files (if any) are changed/new compared to most recent commit in repo
 ```
+
 - `git add`
+
 ```text
 stages files to be committed
 ```
+
 - `git commit`
+
 ```text
 commits staged files to the repo
 ```
+
 - `git log`
+
 ```text
 command shows commit history
 ```
+
 - `git diff`
+
 ```text
 shows most recent changes in files compared to most recent commit
 ```
 
 ### 1.7 Repository link
+
 ```text
 https://github.com/bcjenkins1/lab03-exercises
 ```
@@ -143,11 +159,13 @@ https://github.com/bcjenkins1/lab03-exercises
 In your own words:
 
 - How does the nested-loop approach check for a duplicate?
+
   ```text
   The loop compares each number with every number that comes after it
   ```
 
 - How does the set-based approach check for a duplicate?
+
   ```text
   it buts everything into a HashSet and a set can't contain duplicates, so they're automatically removed
   ```
@@ -159,15 +177,24 @@ In your own words:
   Memory: O(n), O(n)
   ```
 
-
 ### 1.9 Pull request merge options
 
 In your own words, what does each GitHub merge option do?
 
 - Create a merge commit
+
+```test
+Preserves the fact that there was a seperate branch and then adds a commit that points to the branches then sets main to the said pointer.
+```
+
 - Squash and merge
+
+```test
+Takes all commits from branches and makes it all one commit on main.  Does not show that there were other branches
+```
+
 - Rebase and merge
 
 ```test
-
+Replays each commit in order and resolves merge conflicts each replay.
 ```
